@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"WJTabBarController" bundle:nil];
   UITabBarController* controller = nil;
-  BOOL useNib = false;
+  BOOL useNib = true;
   if (useNib) {
     controller = [storyboard instantiateViewControllerWithIdentifier:@"WJTabBarController"];
   } else {
